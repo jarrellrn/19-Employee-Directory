@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import { Table } from "react-bootstrap";
 
+const tableStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#666",
+};
+
 class EmployeeTable extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +34,7 @@ class EmployeeTable extends Component {
       return <div>Currently loading, may take a few moments.</div>;
     } else {
       return (
-        <div className="container">
+        <div className="container" style={tableStyle}>
           <Table striped bordered hover>
             <thead>
               <tr>
