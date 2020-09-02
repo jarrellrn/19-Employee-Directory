@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
@@ -22,5 +24,8 @@ function App() {
     </div>
   );
 }
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 export default App;
