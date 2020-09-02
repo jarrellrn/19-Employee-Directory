@@ -24,7 +24,7 @@ class EmployeeTable extends Component {
   render() {
     var { items, loading } = this.state;
     if (!loading) {
-      return <div>Loading...</div>;
+      return <div>Currently loading, may take a few moments.</div>;
     } else {
       return (
         <div className="container">
